@@ -17,7 +17,7 @@ public class BrowserSetUp {
 		driver.get("https://swhizz.com/site_staging/admin");
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		// dynamic wait
 		WebElement emailId = driver.findElement(By.name("email"));
 		emailId.sendKeys("admin@admin.com");
 		driver.findElement(By.name("password")).sendKeys("123456");
